@@ -24,7 +24,7 @@ struct ContentView: View {
                     .font(.system(size: UIFont.systemFontSize, weight: .regular, design: .monospaced))
                     .foregroundColor(.red) // Updated the color to red
                     .padding()
-                    .background(Color.clear)
+                    .background(Color.blue)
                     .cornerRadius(10)
 
                 Button(action: executeCommand) {
