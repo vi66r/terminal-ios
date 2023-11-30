@@ -14,7 +14,7 @@ struct ContentView: View {
                     .padding()
                     .padding(.bottom, 20)
                     .background(Color.black)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.green)
             }
             .padding()
 
@@ -22,18 +22,17 @@ struct ContentView: View {
                 TextField("Enter command", text: $inputText)
                     .focused($isInputFieldFocused)
                     .font(.system(size: UIFont.systemFontSize, weight: .regular, design: .monospaced))
-                    .foregroundColor(.white)
+                    .foregroundColor(.red) // Updated the color to red
                     .padding()
                     .background(Color.clear)
                     .cornerRadius(10)
-                    
 
                 Button(action: executeCommand) {
                     Image(systemName: "arrow.right.circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 22, height: 22)
-                        .foregroundColor(.white)
+                        .foregroundColor(.orange)
                 }
             }
             .padding()
